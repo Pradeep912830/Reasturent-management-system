@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="logo">Flavor Bitea</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="form.html">Reserve Your Table</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="reservation-form">
+        <h1>Reserve Your Table</h1>
+        <div class="form-group">
+            <img class="docApp" alt="">
+            <form action="index.php" method="post">
+
+                <div class="formPart1">
+                    <label for="firstName">First Name
+                        <input type="text" id="firstName" placeholder="Enter Name" name="firstName"></label>
+                    <label for="email">Email
+                        <input type="email" id="email" placeholder="Email" name="email"></label>
+                    <label for="dob">Date
+                        <input type="date" id="date" placeholder="" name="date"></label>
+                    <label for="guests">Number Of Guests
+                        <input type="number" id="guests" min="1" placeholder="Number of Guests" name="Guests"></label>
+
+                </div>
+                <div class="formPart2">
+
+                    <label for="lastName">Last Name
+                        <input type="text" id="lastName" placeholder="Last name" name="lastName"></label>
+
+                    <label for="phoneNumber">Phone Number
+                        <input type="phone" id="phoneNumber" placeholder="Phone Number" name="phoneNumber"></label>
+
+                    <label for="time">Time
+                        <input type="time" id="time" placeholder="" name="time"></label>
+
+                    <label for="requests">Special Requests
+                        <input type="requests" id="requests" placeholder="Optional" name="Special"></label>
+                </div>
+                <input class="button" type="submit" value="Reservation Confirm" onclick="">
+            </form>
+        </div>
+   </div>
+
+   <footer>
+    <div class="location">Sagar St, Flavor Bite</div>
+    <div class="social-media">
+        <a href="https://www.zomato.com" target="_blank">Zomato</a>
+        <a href="https://www.swiggy.com" target="_blank">Swiggy</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,445 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+/* Hero Section */
+.hero {
+   position: relative;
+   height: 450px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+.bg{
+    background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?&w=1000');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.9;
+
+}
+
+.Welcome{
+    position: absolute;
+    margin-top:-300px;
+    margin-left: 25%;
+    margin-right: 25%;
+    z-index: 1;
+    color: white;
+}
+.Welcome p{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+.Welcome h1{
+    color: black;
+    font-size: 45px;
+}
+
+/* Banners */
+.banners {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    color: rgb(7, 0, 0);
+}
+
+.banner {
+/*     background-color: rgba(23, 4, 4, 0.7); */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    background-image:url('back-2.png');
+
+}
+
+.testimonials h2 {
+    text-align: center;
+}
+
+/* Menu Item Styles */
+/* .menu-item {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h2 {
+    margin: 0;
+}
+
+.menu-item p {
+    margin: 10px 0;
+} */
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .location {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+.history, .historys{
+    display: flex;
+    flex-direction:row;
+    align-items:top;
+    justify-content: space-evenly;
+    border: 2px solid;
+    margin-bottom: 20px;
+    background: fixed;
+    background-color: bisque;
+}
+.historys{
+    background-color: white;
+    border: none;
+}
+
+/* Owner Photo */
+.owner-photo {
+    width: 20%;
+    height: 400px;
+    border-radius: 1%;
+    margin: 20px 40px;
+    filter: grayscale();
+    margin-top: 6%;
+}
+.about h2{
+    margin-left: px;
+    margin-top: px;
+    text-align: center;
+}
+.goal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+.goal p{
+    border: 2px solid;
+    text-align: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banners {
+        flex-direction: column;
+        text-decoration: none
+    }
+
+    .banner {
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* dish image locator */
+    .hoverextend, .hoverextends {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-radius: 8px;
+        width: 90%;
+      
+        height:200px;
+        overflow: hidden;
+        background-color: black;
+        color: white;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .dishimg{
+        border-radius: 15px;
+        transform: scale(1);
+        border-style: outset;
+   
+        
+    }
+    .dishimg:hover{
+        transform: scale(1.2);
+        transition-duration:1s;
+    }
+    .dishimg img{
+        height: 200px;
+        border-radius: 10px;
+
+
+    }
+    .hoverpara
+    {
+        text-align: left;
+        font-family: helvetica;
+        padding-left: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .hoverpara h2{
+        color: white;
+        text-align: center;
+
+    }
+
+    .hoverextends{
+        background-color: bisque;
+    }
+    .hoverextends h2{
+        background-color: bisque;
+        color: black;
+    }
+    .hoverextends p{
+        background-color: bisque;
+        color:black;
+    }
+
+    /* zambique started ------------------------- */
+    .zambique{
+        height: 320px;
+        width: 100%;
+        overflow-y: scroll;
+    }
+    .foodcorner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+    }
+    .food img{
+        padding: 10px;
+        height: 200px;
+        padding-bottom: 0;
+        
+    }
+    .food{
+        border: 2px solid black;
+        margin:10px;
+        
+    
+    }
+    .food p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        
+        width: 100%;
+        margin:auto;
+        background-color: lightgray;
+    }
+    
+    .zambique button{
+        position: absolute;
+        margin-left: 50%;
+        margin-right: 50%;
+        z-index: inherit;
+        width: 120px;
+        padding: 8px;
+        font-size: 18px;
+        color:rgb(235, 209, 209);
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(247, 41, 41);
+       
+    
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .reviewbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: gray 2px solid;
+        border-radius: 15px;
+        background-color:rgb(248, 219, 184);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .reviewimg img{
+        height: 80px;
+        width: 80px;
+         border-radius: 100%;
+      
+    }
+    .reviewimg{
+    
+    
+     border-radius: 100%;
+    
+    
+    }
+    .review{
+    width: 70%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80%;
+    padding: 18px;
+    }
+    .review h2{
+        font-size: 20px;
+        text-align: left;
+        padding-top: 0 !important;
+        margin-top: 0 ;
+        margin-bottom: 0;
+    
+    }
+    .review p{
+        font-size: 17;
+        text-align: left !important;
+    }
+    .costomer{
+        text-align: center;
+    }
+
+    .map{
+        display:flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: space-evenly;
+        border: 2px solid;
+        margin-bottom: 20px;
+        background: fixed;
+        background-color: antiquewhite;
+
+    }
+    .contact {
+        text-align: center;
+    }
+     .contact-info{
+        text-align: left;
+        margin-top: 0px;
+        
+     }
+     .contact-info p{
+        font-size: 30px;
+        margin: 10px;
+     }
+
+     .index-history{
+        background-color: white;
+     }
+
+    a {
+    text-decoration: none;
+    color:rgb(235, 209, 209);
+     }
+    a:hover {
+        color: white;
+    }
